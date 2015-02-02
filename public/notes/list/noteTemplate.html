@@ -1,0 +1,17 @@
+<div class="note-title-scroll">
+    <div class="note-title-container">
+        <div class="note-title">{{note.title}}</div>
+    </div>
+</div>
+<div class="note-text">{{note.text}}</div>
+<div class="button-container">
+    <button ng-click="listCtl.editNote(note)">e</button>
+    <button ng-click="note.askDelete = true">p</button>
+</div>
+
+
+<modal-dialog show="note.askDelete" width="20em" height="20em" border-color="darkred" background-color="salmon">
+    <h2 class="ask-message">pop this nubble?</h2>
+    <button ng-click="listCtl.deleteNote(note)">y</button>
+    <button ng-click="note.askDelete = false">n</button>
+</modal-dialog>

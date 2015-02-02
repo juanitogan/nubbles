@@ -1,0 +1,38 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    outline: 0;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 14pt;
+    text-align: center;
+    vertical-align: middle;
+    color: purple;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: hotpink;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    color: deeppink;
+    margin: 0 0 .1em 0;
+}
+
+h1 {
+    font-size: 96pt;
+}
+
+.title {
+    display: inline-block;
+    margin: 0 1em .2em 0;
+}
+
+.title-container{
+    margin-bottom:  2em;
+}

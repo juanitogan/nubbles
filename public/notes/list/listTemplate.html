@@ -1,0 +1,16 @@
+<!-- Randomize the position of each note container with Modulus math. -->
+<!-- Animate someday. -->
+<!-- Randomize the color(s) as well. -->
+<div class="note-container
+        margin-x{{note.text.length % 5}}
+        margin-y{{note.title.length % 5}}"
+    ng-repeat="note in listCtl.fetchNotes() | filter:searchText"
+>
+    <div class="note-inner-ring
+        bg-color{{note.text.length % 8}}
+    ">
+        <note></note>
+    </div>
+</div>
+
+<note-editor></note-editor>

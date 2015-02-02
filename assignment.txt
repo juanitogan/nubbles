@@ -1,0 +1,61 @@
+https://github.com/ajcrites/bbnotes
+
+Make sure node is installed (`brew install node` should work)
+
+Clone this repo and run `npm install`
+
+To start the server, run `node server`
+
+Create an app using Angular with the following functionality:
+
+* Use two separate controllers: one to list notes and one that has a form that allows you to add a note
+* Use a service that handles notes (including using ajax/http to GET/POST/PUT/DELETE notes)
+* Use a directive to display each individual note
+
+
+notesList.js
+    directive
+    controllerAs:...
+
+    .copy
+
+    note to self: add or update = merge
+
+notes-list.html
+    note in notesList.getNotes() track by note._id
+
+----
+
+Building on the Notes app from yesterday.  I'm including the entire assignment from yesterday, and you'll build off of that:
+
+https://github.com/ajcrites/bbnotes
+
+Make sure node is installed (`brew install node` should work)
+
+Clone this repo and run `npm install`
+
+To start the server, run `node server`
+
+Create an app using Angular with the following functionality:
+
+X* Use two separate controllers: one to list notes and one that has a form that allows you to add a note
+X* Use a service that handles notes (including using ajax/http to GET/POST/PUT/DELETE notes)
+X* Use a directive to display each individual note
+X* Use a controller on the directive to handle updating/deleting of the note
+/* Use isolate scope to pass information from the parent scope (ng-repeat) to the individual note display directive
+/* When you click on a note, it should display that note's information
+/  (title, text, a delete button, and the ability to update the note)
+X* Add an input box that lets you search for notes by matching text (hint: use a filter with ng-repeat)
+?* Create a directive that displays notes in a modal
+?* Use isolate scope to pass the note and "close modal" functionality to this modal directive
+?* Reuse your individual note display directive to display the note inside this modal
+?* Reuse your modal directive to also display an alert message when the user clicks a button
+  (Hint: transclusion could help you out here)
+
+Extra:
+* Use $resource or another library to simplify ajax call handling
+* Make everything pretty
+* ngAnimate
+
+
+filter, isolate filter, transclusion, directives

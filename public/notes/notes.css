@@ -1,0 +1,146 @@
+button, input[type="button"], input[type="submit"] {
+    font-size: 18pt;
+    font-weight: bold;
+    height: 2em;
+    width:  2em;
+    border-radius: 1em;
+    border-width: .15em;
+    border-style: solid;
+    border-color: orangered;
+    background-color: orange;
+    padding-bottom: .3em;
+}
+
+input[type="submit"] {
+    background-color: lightseagreen;
+}
+
+.button-add {
+    height: 6em;
+    width:  6em;
+    border-radius: 3em;
+    border-width: .2em;
+    border-color: forestgreen;
+    background-color: lightgreen;
+}
+
+.button-container {
+    vertical-align: bottom;
+}
+
+.note-container {
+    display: inline-block;
+    width: 16em;
+    height: 16em;
+    border-radius: 8em;
+    border-width: .4em;
+    border-style: solid;
+    border-color: darkmagenta;
+    background-color: yellow;
+    padding: 0;
+    vertical-align: middle;
+    position: relative;
+}
+
+.note-inner-ring {
+    display: inline-block;
+    width: 14em;
+    height: 14em;
+    border-radius: 7em;
+    border-width: .5em;
+    border-style: solid;
+    border-color: darkviolet;
+    background-color: violet;
+    padding: .5em;
+    position: absolute;
+    margin: auto;
+    top: 0; bottom: 0; left: 0; right: 0;
+}
+
+.note-title-scroll {
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    overflow: scroll;
+}
+
+.note-title-container {
+    display: inline-table;
+    height: 2.6em;
+}
+
+.note-title {
+    display: table-cell;
+    font-size: 18;
+    font-weight: bold;
+    color: indigo;
+    vertical-align: bottom;
+}
+
+.note-text {
+    display: inline-block;
+    width: 11em;
+    height: 6.1em;
+    margin: .3em 0 .5em 0;
+    overflow: scroll;
+}
+
+.note-title-input {
+    font-weight: bold;
+    height: 10em;
+    width:  10em;
+    border-radius: 5em;
+    border-width: .2em;
+    border-style: solid;
+    border-color: orange;
+    background-color: lightyellow;
+}
+
+.note-text-input-container {
+    display: inline-block;
+    height: 14em;
+    width:  14em;
+    border-radius: 7em;
+    border-width: .2em;
+    border-style: solid;
+    border-color: orange;
+    background-color: lightyellow;
+    margin: 4em .5em;
+}
+
+.note-text-input {
+    display: inline-block;
+    font-weight: bold;
+    height: 9em;
+    width: 9em;
+    margin: 2.5em;
+    border: 0;
+    background: 0;
+    resize: none;
+}
+
+.search-input {
+    font-size: 18pt;
+    font-weight: bold;
+    height: 8em;
+    width:  8em;
+    border-radius: 4em;
+    border-width: .3em;
+    border-style: solid;
+    border-color: darkblue;
+    background-color: lightblue;
+}
+
+.ask-message {
+    font-size: 18pt;
+    color: gold;
+    margin: 4em 0 4em 0;
+}
+
+
+
+.rotate-45 {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}

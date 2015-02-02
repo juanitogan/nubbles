@@ -1,0 +1,27 @@
+<button class="button-add" ng-click="editCtl.newNote()">+</button>
+
+<modal-dialog show="editCtl.formMode" width="30em" height="30em">
+    <form ng-submit="editCtl.mergeNote()">
+
+        <input type="text" class="note-title-input" required
+            placeholder="title"
+            ng-model="editCtl.note.title"
+            maxlength="20"
+            ng-trim="true"
+        >
+
+        <div class="note-text-input-container">
+            <textarea class="note-text-input"
+                placeholder="text"
+                ng-model="editCtl.note.text"
+                ng-maxlength="500"
+            ></textarea>
+        </div>
+
+        <div class="button-container">
+            <input type="button" value="x" ng-click="editCtl.cancelEdit()">
+            <input type="submit" value="s">
+        </div>
+
+    </form>
+</modal-dialog>
