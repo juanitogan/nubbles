@@ -1,3 +1,7 @@
+/*** Basically, all(most) round objects are found here. ***/
+
+/*** buttons ***/
+
 button, input[type="button"], input[type="submit"] {
     font-size: 18pt;
     font-weight: bold;
@@ -27,6 +31,8 @@ input[type="submit"] {
 .button-container {
     vertical-align: bottom;
 }
+
+/*** note list items ***/
 
 .note-container {
     display: inline-block;
@@ -85,6 +91,8 @@ input[type="submit"] {
     overflow: scroll;
 }
 
+/*** note editor ***/
+
 .note-title-input {
     font-weight: bold;
     height: 10em;
@@ -118,6 +126,8 @@ input[type="submit"] {
     background: 0;
     resize: none;
 }
+
+/*** other ***/
 
 .search-input {
     font-size: 18pt;

@@ -23,6 +23,7 @@
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
 
+    /* MJJ: let's make it round and funky!!! */
     border-radius: 50%;
     border-width: 1em;
     border-style: solid;

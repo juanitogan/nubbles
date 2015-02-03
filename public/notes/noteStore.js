@@ -1,15 +1,22 @@
-angular.module("notica").factory("noteStore", [
+////////////////////////////////////////////////////////////////////////////////
+// Notes datastore service.
+//
+angular.module("nubbles").factory("noteStore", [
 
 "$http", "$window", function ($http, $window) {
 
+    // Store the notes array internally so that we don't have to wait for
+    // the ajax GET all the time.
     var notes = [];
 
     return {
 
+        // Public function that exposes the notes array.
         fetchNotes: function() {
             return notes;
         }
 
+        // Get all notes from the server.
     ,   getNotes: function() {
             var req = {
                 method: "GET"
@@ -25,6 +32,7 @@ angular.module("notica").factory("noteStore", [
             ;
         }
 
+        // Add a new note to the server and then update the local store on success.
     ,   addNote: function(obj) {
             var req = {
                 method: "POST"
@@ -41,6 +49,7 @@ angular.module("notica").factory("noteStore", [
             ;
         }
 
+        // Update a note on the server and then update the local store on success.
     ,   updateNote: function(obj) {
             var req = {
                 method: "PUT"
@@ -64,6 +73,7 @@ angular.module("notica").factory("noteStore", [
             ;
         }
 
+        // Delete a note from the server and then update the local store on success.
     ,   deleteNote: function(obj) {
             var req = {
                 method: "DELETE"
