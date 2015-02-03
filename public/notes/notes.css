@@ -43,6 +43,7 @@ input[type="submit"] {
     border-style: solid;
     border-color: darkmagenta;
     background-color: yellow;
+    box-shadow: 1em 1em 2em mediumvioletred;
     padding: 0;
     vertical-align: middle;
     position: relative;
@@ -139,6 +140,25 @@ input[type="submit"] {
     border-style: solid;
     border-color: darkblue;
     background-color: lightblue;
+}
+.magnifying-glass {
+    display: inline-block;
+    position: relative;
+}
+.magnifying-glass::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: -.0em;
+    bottom: .7em;
+    border-width: 0;
+    background: darkblue;
+    width: 2em;
+    height: .8em;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
 }
 
 .ask-message {
